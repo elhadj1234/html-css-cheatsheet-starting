@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Comprehensive Cheatsheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS Comprehensive Cheatsheet</h1>
+        <p>A detailed guide to help you master the basics of web development.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>HTML Basics</h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating webpages. Below is the basic structure of an HTML document:</p>
+            <code>
+                &lt;!DOCTYPE html&gt; <!-- Declares the document type -->
+                &lt;html lang="en"&gt; <!-- Root element with language attribute -->
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt; <!-- Sets the character encoding -->
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <!-- Makes the site responsive -->
+                        &lt;title&gt;Page Title&lt;/title&gt; <!-- Sets the page title shown in the browser tab -->
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;This is a Heading&lt;/h1&gt; <!-- Main heading of the page -->
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt; <!-- A paragraph of text -->
+                        &lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt; <!-- A hyperlink -->
+                        &lt;!-- Comment: This won't appear in the browser -->
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </section>
+
+        <section>
+            <h2>CSS Basics</h2>
+            <p>CSS (Cascading Style Sheets) is used to style HTML elements. Below are some basic styles and their purposes:</p>
+            <code>
+                /* General styles for the page */
+                body {
+                    font-family: 'Arial', sans-serif; /* Sets the default font */
+                    background-color: #f4f4f9; /* Light gray background */
+                    color: #333; /* Dark gray text */
+                    margin: 0; /* Removes default margins */
+                    padding: 0; /* Removes default padding */
+                }
+
+                h1 {
+                    color: #0078D7; /* Blue heading text */
+                    font-size: 2.5em; /* Larger font size */
+                }
+
+                a {
+                    color: #0078D7; /* Link color */
+                    text-decoration: none; /* Removes underline */
+                }
+
+                a:hover {
+                    text-decoration: underline; /* Adds underline on hover */
+                }
+            </code>
+        </section>
+
+        <section>
+            <h2>Common HTML Elements</h2>
+            <p>These elements are frequently used in web development. Below are examples:</p>
+            <code>
+                &lt;ul&gt; <!-- Unordered list -->
+                    &lt;li&gt;First item&lt;/li&gt;
+                    &lt;li&gt;Second item&lt;/li&gt;
+                &lt;/ul&gt;
+
+                &lt;img src="example.jpg" alt="An example image" width="300" height="200"&gt; <!-- Image with alt text and dimensions -->
+
+                &lt;table&gt; <!-- Table structure -->
+                    &lt;tr&gt;
+                        &lt;th&gt;Header 1&lt;/th&gt;
+                        &lt;th&gt;Header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Data 1&lt;/td&gt;
+                        &lt;td&gt;Data 2&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+
+                &lt;form action="/submit" method="POST"&gt; <!-- A simple form -->
+                    &lt;label for="name"&gt;Name:&lt;/label&gt;
+                    &lt;input type="text" id="name" name="name"&gt;
+                    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                &lt;/form&gt;
+            </code>
+        </section>
+
+        <section>
+            <h2>CSS Selectors and Advanced Features</h2>
+            <p>CSS selectors are used to target specific HTML elements. Here are some common types:</p>
+            <code>
+                /* Element selector */
+                p {
+                    color: black;
+                }
+
+                /* Class selector */
+                .highlight {
+                    background-color: yellow; /* Highlights text */
+                }
+
+                /* ID selector */
+                #main-title {
+                    text-align: center; /* Centers the text */
+                }
+
+                /* Descendant selector */
+                div p {
+                    font-size: 14px; /* Targets paragraphs inside divs */
+                }
+
+                /* Pseudo-class example */
+                a:hover {
+                    color: red; /* Changes link color on hover */
+                }
+
+                /* Media query for responsiveness */
+                @media (max-width: 600px) {
+                    body {
+                        font-size: 14px; /* Adjusts font size for smaller screens */
+                    }
+                }
+            </code>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with ❤️ for developers and learners.</p>
+        <p>Explore more at <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>.</p>
+    </footer>
+</body>
+</html>
